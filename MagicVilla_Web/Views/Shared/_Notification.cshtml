@@ -1,0 +1,38 @@
+﻿<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+@if (TempData["success"] != null)
+{
+	<script type="text/javascript">
+		Swal.fire({
+			position: "top-end",
+			icon: "success",
+			title: '@TempData["success"]',
+			showConfirmButton: false,
+			timer: 1500
+		});
+		
+		@* {
+			toast: true,
+				position: "top-end",
+					showConfirmButton: false,
+						timer: 3000,
+							timerProgressBar: true,
+								
+		});
+		Toast.fire({
+			icon: "success",
+			
+		}); *@
+	</script>
+}
+@if (TempData["error"] != null)
+{
+	<script type="text/javascript">
+		Swal.fire({
+			position: "top-end",
+			icon: "success",
+			title: '@TempData["error"]',
+			showConfirmButton: false,
+			timer: 1500
+		});
+	</script>
+}
